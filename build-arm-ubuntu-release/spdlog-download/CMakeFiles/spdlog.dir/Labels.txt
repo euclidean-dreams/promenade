@@ -1,0 +1,14 @@
+# Target labels
+ spdlog
+# Source files and their labels
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/CMakeFiles/spdlog
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/CMakeFiles/spdlog.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/CMakeFiles/spdlog-complete.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-build.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-configure.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-download.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-install.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-mkdir.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-patch.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-test.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-update.rule

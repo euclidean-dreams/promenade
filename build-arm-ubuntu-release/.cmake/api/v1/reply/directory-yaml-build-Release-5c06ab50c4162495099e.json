@@ -1,0 +1,121 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build-arm-ubuntu-release/yaml-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 303,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 336,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 340,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 345,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"yaml-build/libyaml-cpp.a"
+			],
+			"targetId" : "yaml-cpp::@2a2019bde9f866e651e2",
+			"targetIndex" : 21,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/yaml-cpp",
+			"paths" : 
+			[
+				{
+					"from" : "build-arm-ubuntu-release/yaml-src/include/yaml-cpp",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "dev",
+			"destination" : "lib/cmake/yaml-cpp",
+			"paths" : 
+			[
+				"build-arm-ubuntu-release/yaml-build/CMakeFiles/yaml-cpp-config.cmake",
+				"build-arm-ubuntu-release/yaml-build/yaml-cpp-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/yaml-cpp",
+			"exportName" : "yaml-cpp-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "yaml-cpp::@2a2019bde9f866e651e2",
+					"index" : 21
+				}
+			],
+			"paths" : 
+			[
+				"yaml-build/CMakeFiles/Export/lib/cmake/yaml-cpp/yaml-cpp-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build-arm-ubuntu-release/yaml-cpp.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "yaml-build",
+		"source" : "build-arm-ubuntu-release/yaml-src"
+	}
+}

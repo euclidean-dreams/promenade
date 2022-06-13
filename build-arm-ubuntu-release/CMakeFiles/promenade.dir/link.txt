@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/promenade.dir/src/main.cpp.o CMakeFiles/promenade.dir/src/promenade.cpp.o -o promenade  impresario-utils-build/libimpresario-utils.a ws281x-build/libws2811.a -lzmq -lpthread yaml-build/libyaml-cpp.a spdlog-build/libspdlog.a flatbuffers-build/libflatbuffers.a -lm 

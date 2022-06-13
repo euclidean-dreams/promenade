@@ -1,0 +1,3 @@
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-download/CMakeFiles/yaml.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-download/CMakeFiles/edit_cache.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-download/CMakeFiles/rebuild_cache.dir

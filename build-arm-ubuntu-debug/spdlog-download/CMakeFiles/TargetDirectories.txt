@@ -1,0 +1,3 @@
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-download/CMakeFiles/spdlog.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-download/CMakeFiles/edit_cache.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-download/CMakeFiles/rebuild_cache.dir

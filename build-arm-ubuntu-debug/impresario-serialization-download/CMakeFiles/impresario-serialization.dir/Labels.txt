@@ -1,0 +1,14 @@
+# Target labels
+ impresario-serialization
+# Source files and their labels
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/CMakeFiles/impresario-serialization
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/CMakeFiles/impresario-serialization.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/CMakeFiles/impresario-serialization-complete.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-build.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-configure.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-download.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-install.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-mkdir.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-patch.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-test.rule
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-update.rule

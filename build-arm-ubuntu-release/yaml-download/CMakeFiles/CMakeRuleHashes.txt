@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+661f4248f1f9f8cc7b5ca77e000f6102 CMakeFiles/yaml
+59da50f19def8a2be579454e6225f660 CMakeFiles/yaml-complete
+40df8c6562acd86675eb5c99b98c49ee yaml-prefix/src/yaml-stamp/yaml-build
+f20013834dda377a242d80a3619eb215 yaml-prefix/src/yaml-stamp/yaml-configure
+bfd5c5e5e0464044d561ebd0bbc28c8d yaml-prefix/src/yaml-stamp/yaml-download
+fe10e969e6705e93583a5d5fdde3148f yaml-prefix/src/yaml-stamp/yaml-install
+12dd2e4965e2e3e2876e4c87ae0f7f6b yaml-prefix/src/yaml-stamp/yaml-mkdir
+9b8b6370faeca29722476b5f7ca0503a yaml-prefix/src/yaml-stamp/yaml-patch
+9dcf455e183015683390302f9489a9e0 yaml-prefix/src/yaml-stamp/yaml-test
+b7097210c1015d5571dcf62a8a44a753 yaml-prefix/src/yaml-stamp/yaml-update

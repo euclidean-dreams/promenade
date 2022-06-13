@@ -1,0 +1,3 @@
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-download/CMakeFiles/impresario-utils.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-download/CMakeFiles/edit_cache.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-download/CMakeFiles/rebuild_cache.dir

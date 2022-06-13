@@ -1,0 +1,8 @@
+namespace ImpresarioSerialization;
+
+table Essentia {
+    stft:[float32];
+    equalized:[float32];
+}
+
+root_type Essentia;

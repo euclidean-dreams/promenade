@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+c0ec01eae0d1587d8221a8c79438fc5e CMakeFiles/impresario-serialization
+afaa04c81b57ddba2aadef0719bfc793 CMakeFiles/impresario-serialization-complete
+ec6fe5e5378d694cea69c4b73a7f7bf8 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-build
+1568329c9f9a7dac77a37fcd86dcb2c2 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-configure
+2676a71c649ee732e816760e200619d4 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-download
+4798cb58f10ab80bf0a010245fa91577 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-install
+ae4eeb749f378c08498a621b95531405 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-mkdir
+e6e73a4c5605127517363122b3e8d121 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-patch
+410de5146859181db950b52541d0b089 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-test
+542cfe890d1deee042667d801d701502 impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-update

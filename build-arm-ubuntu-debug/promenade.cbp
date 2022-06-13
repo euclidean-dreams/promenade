@@ -1,0 +1,2158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="promenade"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-debug\;CMake Files\build-arm-ubuntu-debug\flatbuffers-src\;CMake Files\build-arm-ubuntu-debug\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-debug\yaml-src\;CMake Files\build-arm-ubuntu-debug\yaml-src\test\;CMake Files\build-arm-ubuntu-debug\yaml-src\util\;CMake Files\build-arm-ubuntu-debug\yaml-build\;CMake Files\build-arm-ubuntu-debug\yaml-build\test\;CMake Files\build-arm-ubuntu-debug\yaml-build\test\googletest_project-prefix\;CMake Files\build-arm-ubuntu-debug\yaml-build\test\googletest_project-prefix\tmp\;CMake Files\build-arm-ubuntu-debug\impresario-serialization-src\;CMake Files\build-arm-ubuntu-debug\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-debug\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-debug\impresario-utils-src\;CMake Files\build-arm-ubuntu-debug\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-debug\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-debug\spdlog-src\;CMake Files\build-arm-ubuntu-debug\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-debug\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="promenade">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/promenade" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/josiah/euclid/promenade/src"/>
+					<Add directory="/home/josiah/euclid/promenade/src/semiotics"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 promenade"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="promenade/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/promenade" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/josiah/euclid/promenade/src"/>
+					<Add directory="/home/josiah/euclid/promenade/src/semiotics"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 promenade/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="impresario-utils">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/libimpresario-utils.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 impresario-utils"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="impresario-utils/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/libimpresario-utils.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 impresario-utils/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatbuffers">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/libflatbuffers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatbuffers"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatbuffers/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/libflatbuffers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatbuffers/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatc">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatc"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatc/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatc/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flathash">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flathash" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flathash"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flathash/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flathash" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flathash/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flattests">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flattests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE"/>
+					<Add option="-DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1"/>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flattests"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flattests/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flattests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE"/>
+					<Add option="-DFLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1"/>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flattests/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatsamplebinary">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatsamplebinary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatsamplebinary"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatsamplebinary/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatsamplebinary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatsamplebinary/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatsampletext">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatsampletext" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatsampletext"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatsampletext/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatsampletext" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatsampletext/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatsamplebfbs">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatsamplebfbs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatsamplebfbs"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatsamplebfbs/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/flatsamplebfbs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatsamplebfbs/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generated_code">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 generated_code"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="debuggable">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 debuggable"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="releasable">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 releasable"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/libyaml-cpp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 yaml-cpp"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/libyaml-cpp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 yaml-cpp/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="format">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 format"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="googletest_project">
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 googletest_project"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run-tests">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/run-tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/prefix/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 run-tests"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run-tests/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/run-tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/prefix/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 run-tests/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parse">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/parse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 parse"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parse/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/parse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 parse/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sandbox">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/sandbox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 sandbox"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sandbox/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/sandbox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 sandbox/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="read">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/read" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 read"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="read/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/read" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 read/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/libspdlogd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 spdlog"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/libspdlogd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 spdlog/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ws2811">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/libws2811.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 ws2811"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ws2811/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/libws2811.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 ws2811/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples/monster_generated.h">
+			<Option target="flatsamplebinary"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/samples/monster_generated.h.rule">
+			<Option target="flatsamplebinary"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/arrays_test_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/arrays_test_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/monster_extra_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/monster_extra_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/monster_test_bfbs_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/monster_test_bfbs_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/monster_test_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/monster_test_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/namespace_test/namespace_test1_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/namespace_test/namespace_test1_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/namespace_test/namespace_test2_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/namespace_test/namespace_test2_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/native_type_test_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/native_type_test_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/union_vector/union_vector_generated.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-build/tests/union_vector/union_vector_generated.h.rule">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/cpp_generator.cc">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/cpp_generator.h">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/go_generator.cc">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/go_generator.h">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/java_generator.cc">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/java_generator.h">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/python_generator.cc">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/python_generator.h">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/python_private_generator.h">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/schema_interface.h">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/swift_generator.cc">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/grpc/src/compiler/swift_generator.h">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/base.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/code_generators.h">
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/flatbuffers.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsamplebinary"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/flexbuffers.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/hash.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flathash"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/idl.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/minireflect.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/reflection.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/reflection_generated.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/registry.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/stl_emulation.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/include/flatbuffers/util.h">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/samples/sample_bfbs.cpp">
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/samples/sample_binary.cpp">
+			<Option target="flatsamplebinary"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/samples/sample_text.cpp">
+			<Option target="flatsampletext"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/code_generators.cpp">
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/flatc.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/flatc_main.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/flathash.cpp">
+			<Option target="flathash"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_cpp.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_csharp.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_dart.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_fbs.cpp">
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_go.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_grpc.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_java.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_js_ts.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_json_schema.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_kotlin.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_lobster.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_lua.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_php.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_python.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_rust.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_swift.cpp">
+			<Option target="flatc"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_gen_text.cpp">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/idl_parser.cpp">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/reflection.cpp">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/src/util.cpp">
+			<Option target="flatbuffers"/>
+			<Option target="flatc"/>
+			<Option target="flattests"/>
+			<Option target="flatsampletext"/>
+			<Option target="flatsamplebfbs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/tests/native_type_test_impl.cpp">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/tests/native_type_test_impl.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/tests/test.cpp">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/tests/test_assert.cpp">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/tests/test_assert.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/tests/test_builder.cpp">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/tests/test_builder.h">
+			<Option target="flattests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/include/ImpresarioUtils.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Bootstrapper.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Bootstrapper.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Config.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Config.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Macros.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/NonCopyable.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/RandomNumberGenerator.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/RandomNumberGenerator.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Time.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Time.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Timer.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/Timer.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/arbiter/Arbiter.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/arbiter/BufferArbiter.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/circlet/Circlet.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/circlet/Circlet.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/circlet/Circulable.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/circlet/TickingCirculable.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/network/NetworkSocket.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/network/NetworkSocket.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/network/Parcel.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/network/Parcel.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/network/Unwrap.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/network/Unwrap.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/percipient/VolitiaPercipient.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/src/percipient/VolitiaPercipient.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/async.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/async_logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/async_logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/common-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/common.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/backtracer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/backtracer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/circular_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/console_globals.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/file_helper-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/file_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/fmt_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/log_msg-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/log_msg.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/log_msg_buffer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/log_msg_buffer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/mpmc_blocking_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/null_mutex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/os-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/os.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/periodic_worker-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/periodic_worker.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/registry-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/registry.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/synchronous_factory.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/tcp_client-windows.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/tcp_client.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/thread_pool-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/thread_pool.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/details/windows_include.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bin_to_hex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/args.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/chrono.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/color.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/compile.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/core.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/format-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/format.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/locale.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/os.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/ostream.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/printf.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/ranges.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/bundled/xchar.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/chrono.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/compile.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/fmt.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/ostr.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fmt/xchar.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/fwd.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/pattern_formatter-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/pattern_formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/android_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/ansicolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/ansicolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/base_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/base_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/basic_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/basic_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/daily_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/dist_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/dup_filter_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/hourly_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/mongo_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/msvc_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/null_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/ostream_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/qt_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/ringbuffer_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/rotating_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/rotating_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/stdout_color_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/stdout_color_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/stdout_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/stdout_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/syslog_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/systemd_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/tcp_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/win_eventlog_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/wincolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/sinks/wincolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/spdlog-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/spdlog.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/stopwatch.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/tweakme.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/include/spdlog/version.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/src/async.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/src/cfg.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/src/color_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/src/file_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/src/fmt.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/src/spdlog.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/src/stdout_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/dma.c">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/dma.h">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/mailbox.c">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/mailbox.h">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/main.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/pcm.c">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/pcm.h">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/pwm.c">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/pwm.h">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/rpihw.c">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/rpihw.h">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/ws2811.c">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/ws2811.h">
+			<Option target="ws2811"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/anchor.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/binary.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/contrib/anchordict.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/contrib/graphbuilder.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/dll.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/emitfromevents.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/emitter.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/emitterdef.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/emittermanip.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/emitterstyle.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/eventhandler.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/exceptions.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/mark.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/convert.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/bool_type.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/impl.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/iterator.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/iterator_fwd.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/memory.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/node.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/node_data.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/node_iterator.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/detail/node_ref.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/emit.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/impl.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/iterator.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/node.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/parse.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/ptr.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/node/type.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/null.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/ostream_wrapper.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/parser.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/stlemitter.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/traits.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/include/yaml-cpp/yaml.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/binary.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/collectionstack.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/contrib/graphbuilder.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/contrib/graphbuilderadapter.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/contrib/graphbuilderadapter.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/convert.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/directives.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/directives.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/emit.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/emitfromevents.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/emitter.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/emitterstate.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/emitterstate.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/emitterutils.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/emitterutils.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/exceptions.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/exp.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/exp.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/indentation.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/memory.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/node.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/node_data.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/nodebuilder.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/nodebuilder.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/nodeevents.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/nodeevents.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/null.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/ostream_wrapper.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/parse.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/parser.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/ptr_vector.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/regex_yaml.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/regex_yaml.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/regeximpl.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/scanner.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/scanner.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/scanscalar.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/scanscalar.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/scantag.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/scantag.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/scantoken.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/setting.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/simplekey.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/singledocparser.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/singledocparser.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/stream.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/stream.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/streamcharsource.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/stringsource.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/tag.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/tag.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/src/token.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/handler_test.h">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/emitter_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/encoding_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/error_messages_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/gen_emitter_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/handler_spec_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/handler_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/load_node_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/integration/node_spec_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/main.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/mock_event_handler.h">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/node/node_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/ostream_wrapper_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/regex_test.cpp">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/specexamples.h">
+			<Option target="run-tests"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/util/parse.cpp">
+			<Option target="parse"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/util/read.cpp">
+			<Option target="read"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/util/sandbox.cpp">
+			<Option target="sandbox"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/led_strip.h">
+			<Option target="promenade"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/main.cpp">
+			<Option target="promenade"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/promenade.cpp">
+			<Option target="promenade"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/promenade.h">
+			<Option target="promenade"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/semiotics/blocks.h">
+			<Option target="promenade"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/semiotics/paradigm.h">
+			<Option target="promenade"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/semiotics/semiotics.h">
+			<Option target="promenade"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\flatbuffers-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/CMake/BuildFlatBuffers.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\flatbuffers-src\CMake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/CMake/FlatbuffersConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\flatbuffers-src\CMake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-src/CMake/Version.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\flatbuffers-src\CMake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\yaml-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/yaml-cpp-config-version.cmake.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\yaml-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/yaml-cpp-config.cmake.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\yaml-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/yaml-cpp.pc.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\yaml-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\yaml-src\test\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-src/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\yaml-src\util\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-build/test/googletest_project-prefix/tmp/googletest_project-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\yaml-build\test\googletest_project-prefix\tmp\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\impresario-serialization-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/lib/cmake-utils/dependency-downloader.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\impresario-serialization-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/lib/cmake-utils/dependency-integrator.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\impresario-serialization-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\impresario-utils-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/lib/cmake-utils/dependency-downloader.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\impresario-utils-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/lib/cmake-utils/dependency-integrator.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\impresario-utils-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\spdlog-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/cmake/ide.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-src/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\ws281x-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/pkg-config.pc.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\ws281x-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-src/version.h.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-debug\ws281x-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/lib/cmake-utils/dependency-downloader.cmake">
+			<Option virtualFolder="CMake Files\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/lib/cmake-utils/dependency-integrator.cmake">
+			<Option virtualFolder="CMake Files\lib\cmake-utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

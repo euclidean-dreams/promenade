@@ -1,0 +1,187 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "flatbuffers-build/flathash"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_compile_options",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"build-arm-ubuntu-release/flatbuffers-src/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 340,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 310,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 311,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 458,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 470,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-dev"
+				},
+				{
+					"fragment" : "-std=gnu++14"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "FLATBUFFERS_LOCALE_INDEPENDENT=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/grpc"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-build/tests"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-build/samples"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"id" : "flathash::@bea912407e3719a83c7d",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "flathash",
+	"nameOnDisk" : "flathash",
+	"paths" : 
+	{
+		"build" : "flatbuffers-build",
+		"source" : "build-arm-ubuntu-release/flatbuffers-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "build-arm-ubuntu-release/flatbuffers-src/include/flatbuffers/hash.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build-arm-ubuntu-release/flatbuffers-src/src/flathash.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

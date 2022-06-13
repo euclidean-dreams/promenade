@@ -1,0 +1,317 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "impresario-utils-build",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"jsonFile" : "directory-impresario-utils-build-Debug-56f5734e25b6afd3dc04.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build-arm-ubuntu-debug/impresario-utils-src",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "impresario-serialization-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-impresario-serialization-build-Debug-82e30c89c21f4b903f82.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "build-arm-ubuntu-debug/impresario-serialization-src"
+				},
+				{
+					"build" : "flatbuffers-build",
+					"jsonFile" : "directory-flatbuffers-build-Debug-7b39955dbab8b0138425.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "build-arm-ubuntu-debug/flatbuffers-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "yaml-build",
+					"jsonFile" : "directory-yaml-build-Debug-5e854cfa829cacb129de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "build-arm-ubuntu-debug/yaml-src",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						5,
+						9
+					]
+				},
+				{
+					"build" : "spdlog-build",
+					"jsonFile" : "directory-spdlog-build-Debug-745f97e2e5ab03931ed7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 5,
+					"source" : "build-arm-ubuntu-debug/spdlog-src",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "ws281x-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-ws281x-build-Debug-73e956471b0c47d4c79c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "build-arm-ubuntu-debug/ws281x-src",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "promenade",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "impresario-utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "impresario-serialization",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "FlatBuffers",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "YAML_CPP",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						5,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "spdlog",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "rpi_ws281x",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "debuggable::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-debuggable-Debug-dad5d158b84066c41e60.json",
+					"name" : "debuggable",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatbuffers::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatbuffers-Debug-34842ac40530aa2b6556.json",
+					"name" : "flatbuffers",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "format::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-format-Debug-060ff5be528d75300e42.json",
+					"name" : "format",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "impresario-utils::@d2a19d661b3803f8b4db",
+					"jsonFile" : "target-impresario-utils-Debug-9d38d8959e6e3a02cea7.json",
+					"name" : "impresario-utils",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "promenade::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-promenade-Debug-894f27eab087830d9a27.json",
+					"name" : "promenade",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "releasable::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-releasable-Debug-042d8c28a27d78c0cef5.json",
+					"name" : "releasable",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "spdlog::@625a1e3a0ca84f3b1e66",
+					"jsonFile" : "target-spdlog-Debug-46a88b205f32be0d0378.json",
+					"name" : "spdlog",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "test::@50f8fbb702815973b2d0",
+					"jsonFile" : "target-test-Debug-0c9ae51341c4def4973c.json",
+					"name" : "test",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ws2811::@50f8fbb702815973b2d0",
+					"jsonFile" : "target-ws2811-Debug-22fbf018f0126bac316a.json",
+					"name" : "ws2811",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "yaml-cpp::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-yaml-cpp-Debug-6f12ce71a2dcf8a17ddf.json",
+					"name" : "yaml-cpp",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/josiah/euclid/promenade/build-arm-ubuntu-debug",
+		"source" : "/home/josiah/euclid/promenade"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+55a9dff84b2fa50848d0d10733942de3 CMakeFiles/flatbuffers
+52e3822837fc3ba62c18e5e60abf2554 CMakeFiles/flatbuffers-complete
+61b43a304f37c323788052e0cbbd933a flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-build
+947161bcf05db3e39d641af91bf51a2b flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-configure
+df90c224e07cb667488164a5fed0b922 flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-download
+c6662b44e5b21c9f63854cba13c6eb6d flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-install
+1d616d2452af590ab496193a1a7f0c86 flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-mkdir
+2ee50890336ebd45f444ea3ae487095f flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-patch
+6641f8bb7eabc0740954546d2a08d07d flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-test
+b8203ac91566d4f19e128abd2b734f33 flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-update

@@ -1,0 +1,90 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"build-arm-ubuntu-release/ws281x-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 76,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"ws281x-build/libws2811.a"
+			],
+			"targetId" : "ws2811::@50f8fbb702815973b2d0",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ws2811",
+			"paths" : 
+			[
+				"build-arm-ubuntu-release/ws281x-src/ws2811.h",
+				"build-arm-ubuntu-release/ws281x-src/rpihw.h",
+				"build-arm-ubuntu-release/ws281x-src/pwm.h",
+				"build-arm-ubuntu-release/ws281x-src/clk.h",
+				"build-arm-ubuntu-release/ws281x-src/dma.h",
+				"build-arm-ubuntu-release/ws281x-src/gpio.h",
+				"build-arm-ubuntu-release/ws281x-src/mailbox.h",
+				"build-arm-ubuntu-release/ws281x-src/pcm.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build-arm-ubuntu-release/ws281x-build/libws2811.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"type" : "code"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "ws281x-build",
+		"source" : "build-arm-ubuntu-release/ws281x-src"
+	}
+}

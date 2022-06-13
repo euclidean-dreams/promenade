@@ -1,0 +1,134 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ExternalProject_Add"
+		],
+		"files" : 
+		[
+			"/usr/share/cmake-3.22/Modules/ExternalProject.cmake",
+			"build-arm-ubuntu-release/yaml-src/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3530,
+				"parent" : 1
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "ExternalProjectTargets/googletest_project"
+	},
+	"id" : "googletest_project::@2665dd9459031384fc09",
+	"name" : "googletest_project",
+	"paths" : 
+	{
+		"build" : "yaml-build/test",
+		"source" : "build-arm-ubuntu-release/yaml-src/test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/CMakeFiles/googletest_project",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/CMakeFiles/googletest_project.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/CMakeFiles/googletest_project-complete.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-build.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-configure.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-download.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-install.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-mkdir.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-patch.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-update.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

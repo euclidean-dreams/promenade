@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "impresario-utils-build",
+		"source" : "build-arm-ubuntu-debug/impresario-utils-src"
+	}
+}

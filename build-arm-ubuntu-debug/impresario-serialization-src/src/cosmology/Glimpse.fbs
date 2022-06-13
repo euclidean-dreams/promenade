@@ -1,0 +1,10 @@
+include "cosmology/Color.fbs";
+
+namespace ImpresarioSerialization;
+
+table Glimpse {
+    brightness:uint8;
+    colors:[Color];
+}
+
+root_type Glimpse;

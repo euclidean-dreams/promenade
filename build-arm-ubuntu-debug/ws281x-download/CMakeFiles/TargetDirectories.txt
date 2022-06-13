@@ -1,0 +1,3 @@
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-download/CMakeFiles/ws281x.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-download/CMakeFiles/edit_cache.dir
+/home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-download/CMakeFiles/rebuild_cache.dir

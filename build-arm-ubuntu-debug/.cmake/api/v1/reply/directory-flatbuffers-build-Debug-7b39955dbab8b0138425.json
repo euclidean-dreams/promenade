@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "flatbuffers-build",
+		"source" : "build-arm-ubuntu-debug/flatbuffers-src"
+	}
+}

@@ -1,0 +1,464 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "impresario-utils-build",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-impresario-utils-build-Debug-56f5734e25b6afd3dc04.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build-arm-ubuntu-debug/impresario-utils-src",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "impresario-serialization-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-impresario-serialization-build-Debug-82e30c89c21f4b903f82.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "build-arm-ubuntu-debug/impresario-serialization-src"
+				},
+				{
+					"build" : "flatbuffers-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-flatbuffers-build-Debug-f46d51de231a4063b509.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "build-arm-ubuntu-debug/flatbuffers-src",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						9
+					]
+				},
+				{
+					"build" : "yaml-build",
+					"childIndexes" : 
+					[
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-yaml-build-Debug-84e46ae501e89ed0dd9b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "build-arm-ubuntu-debug/yaml-src",
+					"targetIndexes" : 
+					[
+						0,
+						8,
+						15,
+						21
+					]
+				},
+				{
+					"build" : "yaml-build/test",
+					"jsonFile" : "directory-yaml-build.test-Debug-8c2afb7d34741bdb640d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 4,
+					"source" : "build-arm-ubuntu-debug/yaml-src/test",
+					"targetIndexes" : 
+					[
+						10,
+						16
+					]
+				},
+				{
+					"build" : "yaml-build/util",
+					"jsonFile" : "directory-yaml-build.util-Debug-00379983800985a955ee.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 4,
+					"source" : "build-arm-ubuntu-debug/yaml-src/util",
+					"targetIndexes" : 
+					[
+						12,
+						14,
+						17
+					]
+				},
+				{
+					"build" : "spdlog-build",
+					"jsonFile" : "directory-spdlog-build-Debug-745f97e2e5ab03931ed7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 5,
+					"source" : "build-arm-ubuntu-debug/spdlog-src",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "ws281x-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-ws281x-build-Debug-31a338af95456c4c049c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "build-arm-ubuntu-debug/ws281x-src",
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "promenade",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "impresario-utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "impresario-serialization",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "FlatBuffers",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5,
+						6
+					],
+					"name" : "YAML_CPP",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						8,
+						10,
+						12,
+						14,
+						15,
+						16,
+						17,
+						21
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "spdlog",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "rpi_ws281x",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "debuggable::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-debuggable-Debug-dad5d158b84066c41e60.json",
+					"name" : "debuggable",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatbuffers::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatbuffers-Debug-592695ff6503f0d130ae.json",
+					"name" : "flatbuffers",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatc::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatc-Debug-086edcd83884967f3dc3.json",
+					"name" : "flatc",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flathash::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flathash-Debug-480a1c24e155b6e8b367.json",
+					"name" : "flathash",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatsamplebfbs::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatsamplebfbs-Debug-df54ec064e9d4a525a15.json",
+					"name" : "flatsamplebfbs",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatsamplebinary::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatsamplebinary-Debug-bd234d7824738507b6c2.json",
+					"name" : "flatsamplebinary",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatsampletext::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatsampletext-Debug-c846b2f0aabab557dfe3.json",
+					"name" : "flatsampletext",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flattests::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flattests-Debug-3eb2647a9dd61d963e60.json",
+					"name" : "flattests",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "format::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-format-Debug-060ff5be528d75300e42.json",
+					"name" : "format",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "generated_code::@bea912407e3719a83c7d",
+					"jsonFile" : "target-generated_code-Debug-4f9d869f6b726fffdfeb.json",
+					"name" : "generated_code",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "googletest_project::@2665dd9459031384fc09",
+					"jsonFile" : "target-googletest_project-Debug-b85654acd497b1fc699a.json",
+					"name" : "googletest_project",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "impresario-utils::@d2a19d661b3803f8b4db",
+					"jsonFile" : "target-impresario-utils-Debug-9d38d8959e6e3a02cea7.json",
+					"name" : "impresario-utils",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "parse::@ba2835cfa546738cbc1f",
+					"jsonFile" : "target-parse-Debug-4168febc200dcc6ad4ec.json",
+					"name" : "parse",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "promenade::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-promenade-Debug-894f27eab087830d9a27.json",
+					"name" : "promenade",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "read::@ba2835cfa546738cbc1f",
+					"jsonFile" : "target-read-Debug-9850ea8264ab160c4dff.json",
+					"name" : "read",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "releasable::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-releasable-Debug-042d8c28a27d78c0cef5.json",
+					"name" : "releasable",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "run-tests::@2665dd9459031384fc09",
+					"jsonFile" : "target-run-tests-Debug-42822206d3808c1392b1.json",
+					"name" : "run-tests",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sandbox::@ba2835cfa546738cbc1f",
+					"jsonFile" : "target-sandbox-Debug-6ec18a494b13297f325d.json",
+					"name" : "sandbox",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "spdlog::@625a1e3a0ca84f3b1e66",
+					"jsonFile" : "target-spdlog-Debug-46a88b205f32be0d0378.json",
+					"name" : "spdlog",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "test::@50f8fbb702815973b2d0",
+					"jsonFile" : "target-test-Debug-0c9ae51341c4def4973c.json",
+					"name" : "test",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ws2811::@50f8fbb702815973b2d0",
+					"jsonFile" : "target-ws2811-Debug-22fbf018f0126bac316a.json",
+					"name" : "ws2811",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "yaml-cpp::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-yaml-cpp-Debug-4db129734b55aac1a3ee.json",
+					"name" : "yaml-cpp",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/josiah/euclid/promenade/build-arm-ubuntu-debug",
+		"source" : "/home/josiah/euclid/promenade"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

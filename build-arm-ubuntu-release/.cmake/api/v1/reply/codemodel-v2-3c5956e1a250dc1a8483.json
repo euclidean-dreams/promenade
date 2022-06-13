@@ -1,0 +1,464 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "impresario-utils-build",
+					"childIndexes" : 
+					[
+						2,
+						4,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-impresario-utils-build-Release-02bed0326078fca7e521.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build-arm-ubuntu-release/impresario-utils-src",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "impresario-serialization-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-impresario-serialization-build-Release-90e6951031f731e2b114.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "build-arm-ubuntu-release/impresario-serialization-src"
+				},
+				{
+					"build" : "flatbuffers-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-flatbuffers-build-Release-9f369402f80ef6d4791a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "build-arm-ubuntu-release/flatbuffers-src",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						9
+					]
+				},
+				{
+					"build" : "yaml-build",
+					"childIndexes" : 
+					[
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-yaml-build-Release-5c06ab50c4162495099e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "build-arm-ubuntu-release/yaml-src",
+					"targetIndexes" : 
+					[
+						0,
+						8,
+						15,
+						21
+					]
+				},
+				{
+					"build" : "yaml-build/test",
+					"jsonFile" : "directory-yaml-build.test-Release-d2f7e9c1721302a9d5a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 4,
+					"source" : "build-arm-ubuntu-release/yaml-src/test",
+					"targetIndexes" : 
+					[
+						10,
+						16
+					]
+				},
+				{
+					"build" : "yaml-build/util",
+					"jsonFile" : "directory-yaml-build.util-Release-4e3634bd927d5653fb44.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 4,
+					"source" : "build-arm-ubuntu-release/yaml-src/util",
+					"targetIndexes" : 
+					[
+						12,
+						14,
+						17
+					]
+				},
+				{
+					"build" : "spdlog-build",
+					"jsonFile" : "directory-spdlog-build-Release-a4b83bae2d0fcae2a005.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 5,
+					"source" : "build-arm-ubuntu-release/spdlog-src",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "ws281x-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-ws281x-build-Release-b33a160e0e5be7b667c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "build-arm-ubuntu-release/ws281x-src",
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "promenade",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "impresario-utils",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "impresario-serialization",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "FlatBuffers",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5,
+						6
+					],
+					"name" : "YAML_CPP",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						8,
+						10,
+						12,
+						14,
+						15,
+						16,
+						17,
+						21
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "spdlog",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "rpi_ws281x",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "debuggable::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-debuggable-Release-7fbd9c2dba34cb577972.json",
+					"name" : "debuggable",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatbuffers::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatbuffers-Release-5b9a28163425b15096d5.json",
+					"name" : "flatbuffers",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatc::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatc-Release-51a0c28db24289717183.json",
+					"name" : "flatc",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flathash::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flathash-Release-4ac88cfde587c18d173b.json",
+					"name" : "flathash",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatsamplebfbs::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatsamplebfbs-Release-9e807cb1d88137863e73.json",
+					"name" : "flatsamplebfbs",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatsamplebinary::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatsamplebinary-Release-254d182443a1d9bb4f3d.json",
+					"name" : "flatsamplebinary",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flatsampletext::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flatsampletext-Release-7801f124baeb7a02da7e.json",
+					"name" : "flatsampletext",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "flattests::@bea912407e3719a83c7d",
+					"jsonFile" : "target-flattests-Release-c5260ca15abcd8ceee6c.json",
+					"name" : "flattests",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "format::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-format-Release-7799ae6209aa92c9e115.json",
+					"name" : "format",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "generated_code::@bea912407e3719a83c7d",
+					"jsonFile" : "target-generated_code-Release-9fe031ce594510b94cda.json",
+					"name" : "generated_code",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "googletest_project::@2665dd9459031384fc09",
+					"jsonFile" : "target-googletest_project-Release-b0a1e2268a7aabb2c62a.json",
+					"name" : "googletest_project",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "impresario-utils::@d2a19d661b3803f8b4db",
+					"jsonFile" : "target-impresario-utils-Release-ec8839ef0c2c91748671.json",
+					"name" : "impresario-utils",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "parse::@ba2835cfa546738cbc1f",
+					"jsonFile" : "target-parse-Release-c6c2b201dba4b37f19b0.json",
+					"name" : "parse",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "promenade::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-promenade-Release-5db0dec6aaf812b7164f.json",
+					"name" : "promenade",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "read::@ba2835cfa546738cbc1f",
+					"jsonFile" : "target-read-Release-1024c388b39c1194c097.json",
+					"name" : "read",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "releasable::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-releasable-Release-29f0de291c57e840f990.json",
+					"name" : "releasable",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "run-tests::@2665dd9459031384fc09",
+					"jsonFile" : "target-run-tests-Release-9dd79c3e4aaed57f3ae3.json",
+					"name" : "run-tests",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "sandbox::@ba2835cfa546738cbc1f",
+					"jsonFile" : "target-sandbox-Release-0594d8cab77c02a60626.json",
+					"name" : "sandbox",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "spdlog::@625a1e3a0ca84f3b1e66",
+					"jsonFile" : "target-spdlog-Release-f8deda440dfa5f0f3eef.json",
+					"name" : "spdlog",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "test::@50f8fbb702815973b2d0",
+					"jsonFile" : "target-test-Release-fe0fb9b28f9e5f95bdd6.json",
+					"name" : "test",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ws2811::@50f8fbb702815973b2d0",
+					"jsonFile" : "target-ws2811-Release-ecf05df3eb5859908d31.json",
+					"name" : "ws2811",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "yaml-cpp::@2a2019bde9f866e651e2",
+					"jsonFile" : "target-yaml-cpp-Release-3dc7d064c9783589430f.json",
+					"name" : "yaml-cpp",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/josiah/euclid/promenade/build-arm-ubuntu-release",
+		"source" : "/home/josiah/euclid/promenade"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
