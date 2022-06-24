@@ -9,7 +9,7 @@ dma_channel: 10
 promenade_size: 296
 
 initial_brightness: 10
-max_brightness: 100
+max_brightness: 255
 
 # if flickering occurs, try throttling refresh rate to ledCount * 30
 refresh_rate: 2500
