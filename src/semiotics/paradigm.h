@@ -29,5 +29,7 @@ using namespace ImpresarioSerialization;
 namespace PROJECT_NAMESPACE {
 
 extern int promenade_size;
+extern int brightness;
+extern int max_brightness;
 
 }

@@ -1221,6 +1221,9 @@
 		<Unit filename="/home/josiah/euclid/promenade/src/semiotics/semiotics.h">
 			<Option target="promenade"/>
 		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/src/semiotics/squires.h">
+			<Option target="promenade"/>
+		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

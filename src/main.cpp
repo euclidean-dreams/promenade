@@ -4,6 +4,8 @@
 namespace PROJECT_NAMESPACE {
 
 int promenade_size;
+int brightness;
+int max_brightness;
 
 int bootstrap(std::string configFilePath) {
     Bootstrapper bootstrapper(configFilePath, 1);
@@ -11,11 +13,22 @@ int bootstrap(std::string configFilePath) {
 
     // constants
     promenade_size = config.getInt("promenade_size");
+    brightness = config.getInt("initial_brightness");
+    max_brightness = config.getInt("max_brightness");
 
-    auto promenade = mkup<Promenade>(bootstrapper.getZmqContext());
+    // volitia percipient
+    auto axiomologyArbiter = mksp<Arbiter<const Parcel>>();
+    auto phenomenology = mksp<BufferArbiter<const Parcel>>();
+    auto volitiaPercipientThread = VolitiaPercipient::create(
+            bootstrapper.getZmqContext(),
+            Config::getInstance().getString("volitia_endpoint"),
+            axiomologyArbiter, phenomenology);
+
+    auto promenade = mkup<Promenade>(bootstrapper.getZmqContext(), axiomologyArbiter);
     auto thread = Circlet::begin(mv(promenade));
 
     thread->join();
+    volitiaPercipientThread->join();
 
     return 0;
 }

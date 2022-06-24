@@ -2,7 +2,10 @@
 
 using namespace PROJECT_NAMESPACE;
 
-Promenade::Promenade(zmq::context_t &zmqContext) {
+Promenade::Promenade(
+        zmq::context_t &zmqContext,
+        sp<Arbiter<const Parcel>> volitiaArbiter
+): volitiaArbiter{mv(volitiaArbiter)} {
     input = mkup<NetworkSocket>(
             zmqContext,
             Config::getInstance().getString("input_endpoint"),
@@ -18,9 +21,14 @@ uint64_t Promenade::getTickInterval() {
 
 void Promenade::activate() {
     auto parcel_bundle = receive_parcel_bundle();
-    if(!receivedFirstParcel) {
+    if (!receivedFirstParcel) {
         LOGGER->info("received first parcel!");
         receivedFirstParcel = true;
+    }
+    if (volitiaArbiter->newDataAvailable()) {
+        auto axiomologyParcel = volitiaArbiter->take();
+        auto newAxioms = Unwrap::Axiomology(*axiomologyParcel)->axioms();
+        brightness = cast(int, newAxioms->Get(4) * max_brightness);
     }
     for (auto &parcel: parcel_bundle) {
         auto glimpse = Unwrap::Glimpse(*parcel);
@@ -31,6 +39,7 @@ void Promenade::activate() {
             leds.set_led(index, color);
         }
     }
+    leds.setBrightness(brightness);
     leds.render();
 }
 

@@ -27,7 +27,9 @@ set(
         src/semiotics/semiotics.h
 
         src/led_strip.h
-        src/promenade.h src/promenade.cpp)
+        src/promenade.h src/promenade.cpp
+
+)
 add_executable(promenade src/main.cpp ${SOURCE_FILES})
 
 target_include_directories(promenade PRIVATE src)

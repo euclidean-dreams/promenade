@@ -1,13 +1,14 @@
 input_endpoint: ipc:///tmp/percipia
+volitia_endpoint: tcp://volitia:44440
 
 # channel 0 is gpio 18, channel 1 is gpio 13
 pwm_channel: 1
 # use channel 10 for pi A/B, channel 11 for pi zero
 dma_channel: 10
 
-promenade_size: 222
+promenade_size: 296
 
-initial_brightness: 20
+initial_brightness: 10
 max_brightness: 100
 
 # if flickering occurs, try throttling refresh rate to ledCount * 30
