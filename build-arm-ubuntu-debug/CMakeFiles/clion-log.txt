@@ -1,282 +1,73 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/josiah/euclid/promenade -B /home/josiah/euclid/promenade/build-arm-ubuntu-debug
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-download
-[ 11%] Creating directories for 'impresario-utils'
-[ 22%] Performing download step (git clone) for 'impresario-utils'
-Cloning into 'impresario-utils-src'...
+[ 11%] Performing update step for 'impresario-utils'
 HEAD is now at 2c97f13 fixed zmq
-Submodule 'lib/cmake-utils' (git@github.com:impresario-systems/cmake-utils.git) registered for path 'lib/cmake-utils'
-Cloning into '/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-utils-src/lib/cmake-utils'...
-Submodule path 'lib/cmake-utils': checked out '5c61fc29dc288fc7954c8f5a2bfc174c7b3fb2a2'
-[ 33%] Performing update step for 'impresario-utils'
-HEAD is now at 2c97f13 fixed zmq
-[ 44%] No patch step for 'impresario-utils'
-[ 55%] No configure step for 'impresario-utils'
-[ 66%] No build step for 'impresario-utils'
-[ 77%] No install step for 'impresario-utils'
-[ 88%] No test step for 'impresario-utils'
-[100%] Completed 'impresario-utils'
+[ 22%] No patch step for 'impresario-utils'
+[ 33%] No configure step for 'impresario-utils'
+[ 44%] No build step for 'impresario-utils'
+[ 55%] No install step for 'impresario-utils'
+[ 66%] No test step for 'impresario-utils'
+[ 77%] Completed 'impresario-utils'
 [100%] Built target impresario-utils
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-download
-[ 11%] Creating directories for 'impresario-serialization'
-[ 22%] Performing download step (git clone) for 'impresario-serialization'
-Cloning into 'impresario-serialization-src'...
+[ 11%] Performing update step for 'impresario-serialization'
 HEAD is now at 8a1ec7f added eq to essentia
-Submodule 'lib/cmake-utils' (git@github.com:impresario-systems/cmake-utils.git) registered for path 'lib/cmake-utils'
-Cloning into '/home/josiah/euclid/promenade/build-arm-ubuntu-debug/impresario-serialization-src/lib/cmake-utils'...
-Submodule path 'lib/cmake-utils': checked out '5c61fc29dc288fc7954c8f5a2bfc174c7b3fb2a2'
-[ 33%] Performing update step for 'impresario-serialization'
-HEAD is now at 8a1ec7f added eq to essentia
-[ 44%] No patch step for 'impresario-serialization'
-[ 55%] No configure step for 'impresario-serialization'
-[ 66%] No build step for 'impresario-serialization'
-[ 77%] No install step for 'impresario-serialization'
-[ 88%] No test step for 'impresario-serialization'
-[100%] Completed 'impresario-serialization'
+[ 22%] No patch step for 'impresario-serialization'
+[ 33%] No configure step for 'impresario-serialization'
+[ 44%] No build step for 'impresario-serialization'
+[ 55%] No install step for 'impresario-serialization'
+[ 66%] No test step for 'impresario-serialization'
+[ 77%] Completed 'impresario-serialization'
 [100%] Built target impresario-serialization
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-debug/flatbuffers-download
-[ 11%] Creating directories for 'flatbuffers'
-[ 22%] Performing download step (git clone) for 'flatbuffers'
-Cloning into 'flatbuffers-src'...
-HEAD is now at 6df40a24 pre-tag version bump for 1.12
-[ 33%] Performing update step for 'flatbuffers'
-[ 44%] No patch step for 'flatbuffers'
-[ 55%] No configure step for 'flatbuffers'
-[ 66%] No build step for 'flatbuffers'
-[ 77%] No install step for 'flatbuffers'
-[ 88%] No test step for 'flatbuffers'
-[100%] Completed 'flatbuffers'
+[ 11%] Performing update step for 'flatbuffers'
+[ 22%] No patch step for 'flatbuffers'
+[ 33%] No configure step for 'flatbuffers'
+[ 44%] No build step for 'flatbuffers'
+[ 55%] No install step for 'flatbuffers'
+[ 66%] No test step for 'flatbuffers'
+[ 77%] Completed 'flatbuffers'
 [100%] Built target flatbuffers
-CMake Warning (dev) at build-arm-ubuntu-debug/flatbuffers-src/CMakeLists.txt:10 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'FLATBUFFERS_BUILD_TESTS'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) at build-arm-ubuntu-debug/flatbuffers-src/CMakeLists.txt:11 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'FLATBUFFERS_INSTALL'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) at build-arm-ubuntu-debug/flatbuffers-src/CMakeLists.txt:14 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'FLATBUFFERS_BUILD_FLATC'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) at build-arm-ubuntu-debug/flatbuffers-src/CMakeLists.txt:18 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'FLATBUFFERS_BUILD_FLATHASH'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
--- Looking for strtof_l
--- Looking for strtof_l - found
--- Looking for strtoull_l
--- Looking for strtoull_l - found
--- `tests/monster_test.fbs`: add generation of C++ code with '--no-includes;--gen-compare'
--- `tests/monster_test.fbs`: add generation of binary (.bfbs) schema
--- `tests/namespace_test/namespace_test1.fbs`: add generation of C++ code with '--no-includes;--gen-compare'
--- `tests/namespace_test/namespace_test2.fbs`: add generation of C++ code with '--no-includes;--gen-compare'
--- `tests/union_vector/union_vector.fbs`: add generation of C++ code with '--no-includes;--gen-compare'
--- `tests/native_type_test.fbs`: add generation of C++ code with ''
--- `tests/arrays_test.fbs`: add generation of C++ code with '--scoped-enums;--gen-compare'
--- `tests/arrays_test.fbs`: add generation of binary (.bfbs) schema
--- `tests/monster_test.fbs`: add generation of C++ embedded binary schema code with '--no-includes;--gen-compare'
--- `tests/monster_extra.fbs`: add generation of C++ code with '--no-includes;--gen-compare'
--- `samples/monster.fbs`: add generation of C++ code with '--no-includes;--gen-compare'
--- `samples/monster.fbs`: add generation of binary (.bfbs) schema
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-debug/yaml-download
-[ 11%] Creating directories for 'yaml'
-[ 22%] Performing download step (git clone) for 'yaml'
-Cloning into 'yaml-src'...
-HEAD is now at 9a36242 Update version to 0.6.3.
-[ 33%] Performing update step for 'yaml'
-[ 44%] No patch step for 'yaml'
-[ 55%] No configure step for 'yaml'
-[ 66%] No build step for 'yaml'
-[ 77%] No install step for 'yaml'
-[ 88%] No test step for 'yaml'
-[100%] Completed 'yaml'
+[ 11%] Performing update step for 'yaml'
+[ 22%] No patch step for 'yaml'
+[ 33%] No configure step for 'yaml'
+[ 44%] No build step for 'yaml'
+[ 55%] No install step for 'yaml'
+[ 66%] No test step for 'yaml'
+[ 77%] Completed 'yaml'
 [100%] Built target yaml
-CMake Warning (dev) at build-arm-ubuntu-debug/yaml-src/CMakeLists.txt:18 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'YAML_CPP_BUILD_TESTS'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) at build-arm-ubuntu-debug/yaml-src/CMakeLists.txt:19 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'YAML_CPP_BUILD_TOOLS'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) at build-arm-ubuntu-debug/yaml-src/CMakeLists.txt:20 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'YAML_CPP_BUILD_CONTRIB'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
-CMake Warning (dev) at build-arm-ubuntu-debug/yaml-src/CMakeLists.txt:21 (option):
-  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
-  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
-  set the policy and suppress this warning.
-
-  For compatibility with older versions of CMake, option is clearing the
-  normal variable 'YAML_CPP_INSTALL'.
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
--- Performing Test FLAG_WEXTRA
--- Performing Test FLAG_WEXTRA - Success
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-debug/spdlog-download
-[ 11%] Creating directories for 'spdlog'
-[ 22%] Performing download step (git clone) for 'spdlog'
-Cloning into 'spdlog-src'...
-HEAD is now at eb322062 Bump version to 1.9.2
-[ 33%] Performing update step for 'spdlog'
-[ 44%] No patch step for 'spdlog'
-[ 55%] No configure step for 'spdlog'
-[ 66%] No build step for 'spdlog'
-[ 77%] No install step for 'spdlog'
-[ 88%] No test step for 'spdlog'
-[100%] Completed 'spdlog'
+[ 11%] Performing update step for 'spdlog'
+[ 22%] No patch step for 'spdlog'
+[ 33%] No configure step for 'spdlog'
+[ 44%] No build step for 'spdlog'
+[ 55%] No install step for 'spdlog'
+[ 66%] No test step for 'spdlog'
+[ 77%] Completed 'spdlog'
 [100%] Built target spdlog
 -- Build spdlog: 1.9.2
 -- Build type: Debug
--- The C compiler identification is GNU 11.2.0
--- The CXX compiler identification is GNU 11.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-debug/ws281x-download
-[ 11%] Creating directories for 'ws281x'
-[ 22%] Performing download step (git clone) for 'ws281x'
-Cloning into 'ws281x-src'...
-HEAD is now at 9be313f Merge pull request #496 from bendudz/1gb_pi4
-[ 33%] Performing update step for 'ws281x'
-[ 44%] No patch step for 'ws281x'
-[ 55%] No configure step for 'ws281x'
-[ 66%] No build step for 'ws281x'
-[ 77%] No install step for 'ws281x'
-[ 88%] No test step for 'ws281x'
-[100%] Completed 'ws281x'
+[ 11%] Performing update step for 'ws281x'
+[ 22%] No patch step for 'ws281x'
+[ 33%] No configure step for 'ws281x'
+[ 44%] No build step for 'ws281x'
+[ 55%] No install step for 'ws281x'
+[ 66%] No test step for 'ws281x'
+[ 77%] Completed 'ws281x'
 [100%] Built target ws281x
 -- Configuring done
 -- Generating done

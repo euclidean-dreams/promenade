@@ -18,6 +18,10 @@ uint64_t Promenade::getTickInterval() {
 
 void Promenade::activate() {
     auto parcel_bundle = receive_parcel_bundle();
+    if(!receivedFirstParcel) {
+        LOGGER->info("received first parcel!");
+        receivedFirstParcel = true;
+    }
     for (auto &parcel: parcel_bundle) {
         auto glimpse = Unwrap::Glimpse(*parcel);
         auto colors = glimpse->colors();

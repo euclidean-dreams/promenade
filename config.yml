@@ -5,10 +5,10 @@ pwm_channel: 1
 # use channel 10 for pi A/B, channel 11 for pi zero
 dma_channel: 10
 
-promenade_size: 37
+promenade_size: 222
 
 initial_brightness: 20
-max_brightness: 20
+max_brightness: 100
 
 # if flickering occurs, try throttling refresh rate to ledCount * 30
 refresh_rate: 2500

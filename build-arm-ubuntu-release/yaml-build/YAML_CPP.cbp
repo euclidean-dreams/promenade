@@ -5,7 +5,7 @@
 		<Option title="YAML_CPP"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\yaml-src\test\;CMake Files\build-arm-ubuntu-release\yaml-src\util\;CMake Files\build-arm-ubuntu-release\yaml-build\;CMake Files\build-arm-ubuntu-release\yaml-build\test\;CMake Files\build-arm-ubuntu-release\yaml-build\test\googletest_project-prefix\;CMake Files\build-arm-ubuntu-release\yaml-build\test\googletest_project-prefix\tmp\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build"/>
@@ -44,6 +44,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DYAML_CPP_NO_CONTRIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src"/>
 					<Add directory="/usr/include/c++/11"/>
@@ -68,6 +69,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DYAML_CPP_NO_CONTRIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src"/>
 					<Add directory="/usr/include/c++/11"/>
@@ -93,206 +95,6 @@
 					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="googletest_project">
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 googletest_project"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="run-tests">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/run-tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src"/>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test"/>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/prefix/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 run-tests"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="run-tests/fast">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/run-tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src"/>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test"/>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/prefix/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 run-tests/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="parse">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/parse" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 parse"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="parse/fast">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/parse" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 parse/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sandbox">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/sandbox" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 sandbox"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="sandbox/fast">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/sandbox" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 sandbox/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="read">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/read" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 read"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="read/fast">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/read" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/arm-linux-gnueabihf"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 read/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/util/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -408,15 +210,6 @@
 			<Option target="yaml-cpp"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/collectionstack.h">
-			<Option target="yaml-cpp"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilder.cpp">
-			<Option target="yaml-cpp"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilderadapter.cpp">
-			<Option target="yaml-cpp"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilderadapter.h">
 			<Option target="yaml-cpp"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/convert.cpp">
@@ -560,60 +353,6 @@
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/token.h">
 			<Option target="yaml-cpp"/>
 		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/handler_test.h">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/emitter_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/encoding_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/error_messages_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/gen_emitter_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/handler_spec_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/handler_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/load_node_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/integration/node_spec_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/main.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/mock_event_handler.h">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/node/node_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/ostream_wrapper_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/regex_test.cpp">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/specexamples.h">
-			<Option target="run-tests"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/util/parse.cpp">
-			<Option target="parse"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/util/read.cpp">
-			<Option target="read"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/util/sandbox.cpp">
-			<Option target="sandbox"/>
-		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -621,9 +360,6 @@
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\flatbuffers-src\"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/CMake/BuildFlatBuffers.cmake">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/CMake/FlatbuffersConfigVersion.cmake.in">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/CMake/Version.cmake">
@@ -637,18 +373,6 @@
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/yaml-cpp-config.cmake.in">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/yaml-cpp.pc.cmake">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\test\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/util/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\util\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/tmp/googletest_project-cfgcmd.txt.in">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-build\test\googletest_project-prefix\tmp\"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-serialization-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\impresario-serialization-src\"/>

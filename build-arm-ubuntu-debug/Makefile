@@ -107,7 +107,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -221,97 +221,6 @@ flatbuffers/fast:
 .PHONY : flatbuffers/fast
 
 #=============================================================================
-# Target rules for targets named flatc
-
-# Build rule for target.
-flatc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatc
-.PHONY : flatc
-
-# fast build rule for target.
-flatc/fast:
-	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flatc.dir/build.make flatbuffers-build/CMakeFiles/flatc.dir/build
-.PHONY : flatc/fast
-
-#=============================================================================
-# Target rules for targets named flathash
-
-# Build rule for target.
-flathash: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flathash
-.PHONY : flathash
-
-# fast build rule for target.
-flathash/fast:
-	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flathash.dir/build.make flatbuffers-build/CMakeFiles/flathash.dir/build
-.PHONY : flathash/fast
-
-#=============================================================================
-# Target rules for targets named flattests
-
-# Build rule for target.
-flattests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flattests
-.PHONY : flattests
-
-# fast build rule for target.
-flattests/fast:
-	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flattests.dir/build.make flatbuffers-build/CMakeFiles/flattests.dir/build
-.PHONY : flattests/fast
-
-#=============================================================================
-# Target rules for targets named flatsamplebinary
-
-# Build rule for target.
-flatsamplebinary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatsamplebinary
-.PHONY : flatsamplebinary
-
-# fast build rule for target.
-flatsamplebinary/fast:
-	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flatsamplebinary.dir/build.make flatbuffers-build/CMakeFiles/flatsamplebinary.dir/build
-.PHONY : flatsamplebinary/fast
-
-#=============================================================================
-# Target rules for targets named flatsampletext
-
-# Build rule for target.
-flatsampletext: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatsampletext
-.PHONY : flatsampletext
-
-# fast build rule for target.
-flatsampletext/fast:
-	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flatsampletext.dir/build.make flatbuffers-build/CMakeFiles/flatsampletext.dir/build
-.PHONY : flatsampletext/fast
-
-#=============================================================================
-# Target rules for targets named flatsamplebfbs
-
-# Build rule for target.
-flatsamplebfbs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flatsamplebfbs
-.PHONY : flatsamplebfbs
-
-# fast build rule for target.
-flatsamplebfbs/fast:
-	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/flatsamplebfbs.dir/build.make flatbuffers-build/CMakeFiles/flatsamplebfbs.dir/build
-.PHONY : flatsamplebfbs/fast
-
-#=============================================================================
-# Target rules for targets named generated_code
-
-# Build rule for target.
-generated_code: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generated_code
-.PHONY : generated_code
-
-# fast build rule for target.
-generated_code/fast:
-	$(MAKE) $(MAKESILENT) -f flatbuffers-build/CMakeFiles/generated_code.dir/build.make flatbuffers-build/CMakeFiles/generated_code.dir/build
-.PHONY : generated_code/fast
-
-#=============================================================================
 # Target rules for targets named debuggable
 
 # Build rule for target.
@@ -362,71 +271,6 @@ format: cmake_check_build_system
 format/fast:
 	$(MAKE) $(MAKESILENT) -f yaml-build/CMakeFiles/format.dir/build.make yaml-build/CMakeFiles/format.dir/build
 .PHONY : format/fast
-
-#=============================================================================
-# Target rules for targets named googletest_project
-
-# Build rule for target.
-googletest_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest_project
-.PHONY : googletest_project
-
-# fast build rule for target.
-googletest_project/fast:
-	$(MAKE) $(MAKESILENT) -f yaml-build/test/CMakeFiles/googletest_project.dir/build.make yaml-build/test/CMakeFiles/googletest_project.dir/build
-.PHONY : googletest_project/fast
-
-#=============================================================================
-# Target rules for targets named run-tests
-
-# Build rule for target.
-run-tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run-tests
-.PHONY : run-tests
-
-# fast build rule for target.
-run-tests/fast:
-	$(MAKE) $(MAKESILENT) -f yaml-build/test/CMakeFiles/run-tests.dir/build.make yaml-build/test/CMakeFiles/run-tests.dir/build
-.PHONY : run-tests/fast
-
-#=============================================================================
-# Target rules for targets named parse
-
-# Build rule for target.
-parse: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parse
-.PHONY : parse
-
-# fast build rule for target.
-parse/fast:
-	$(MAKE) $(MAKESILENT) -f yaml-build/util/CMakeFiles/parse.dir/build.make yaml-build/util/CMakeFiles/parse.dir/build
-.PHONY : parse/fast
-
-#=============================================================================
-# Target rules for targets named sandbox
-
-# Build rule for target.
-sandbox: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox
-.PHONY : sandbox
-
-# fast build rule for target.
-sandbox/fast:
-	$(MAKE) $(MAKESILENT) -f yaml-build/util/CMakeFiles/sandbox.dir/build.make yaml-build/util/CMakeFiles/sandbox.dir/build
-.PHONY : sandbox/fast
-
-#=============================================================================
-# Target rules for targets named read
-
-# Build rule for target.
-read: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read
-.PHONY : read
-
-# fast build rule for target.
-read/fast:
-	$(MAKE) $(MAKESILENT) -f yaml-build/util/CMakeFiles/read.dir/build.make yaml-build/util/CMakeFiles/read.dir/build
-.PHONY : read/fast
 
 #=============================================================================
 # Target rules for targets named spdlog
@@ -531,22 +375,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... debuggable"
 	@echo "... format"
-	@echo "... generated_code"
-	@echo "... googletest_project"
 	@echo "... releasable"
 	@echo "... flatbuffers"
-	@echo "... flatc"
-	@echo "... flathash"
-	@echo "... flatsamplebfbs"
-	@echo "... flatsamplebinary"
-	@echo "... flatsampletext"
-	@echo "... flattests"
 	@echo "... impresario-utils"
-	@echo "... parse"
 	@echo "... promenade"
-	@echo "... read"
-	@echo "... run-tests"
-	@echo "... sandbox"
 	@echo "... spdlog"
 	@echo "... test"
 	@echo "... ws2811"

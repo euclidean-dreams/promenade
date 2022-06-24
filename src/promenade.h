@@ -7,6 +7,7 @@ namespace PROJECT_NAMESPACE {
 
 class Promenade : public TickingCirculable {
     int refreshRate = Config::getInstance().getInt("refresh_rate");
+    bool receivedFirstParcel = false;
     LedStrip leds = LedStrip();
     up<NetworkSocket> input;
 

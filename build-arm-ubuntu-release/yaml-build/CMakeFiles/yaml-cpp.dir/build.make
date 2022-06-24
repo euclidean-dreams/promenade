@@ -461,34 +461,6 @@ yaml-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/tag.cpp.s"
 	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/tag.cpp -o CMakeFiles/yaml-cpp.dir/src/tag.cpp.s
 
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o: yaml-build/CMakeFiles/yaml-cpp.dir/flags.make
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o: yaml-src/src/contrib/graphbuilder.cpp
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o: yaml-build/CMakeFiles/yaml-cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o"
-	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o -MF CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o.d -o CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o -c /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilder.cpp
-
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.i"
-	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilder.cpp > CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.i
-
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.s"
-	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilder.cpp -o CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.s
-
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o: yaml-build/CMakeFiles/yaml-cpp.dir/flags.make
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o: yaml-src/src/contrib/graphbuilderadapter.cpp
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o: yaml-build/CMakeFiles/yaml-cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o"
-	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o -MF CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o.d -o CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o -c /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilderadapter.cpp
-
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.i"
-	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilderadapter.cpp > CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.i
-
-yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.s"
-	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/contrib/graphbuilderadapter.cpp -o CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.s
-
 # Object files for target yaml-cpp
 yaml__cpp_OBJECTS = \
 "CMakeFiles/yaml-cpp.dir/src/binary.cpp.o" \
@@ -518,9 +490,7 @@ yaml__cpp_OBJECTS = \
 "CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o" \
 "CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o" \
 "CMakeFiles/yaml-cpp.dir/src/stream.cpp.o" \
-"CMakeFiles/yaml-cpp.dir/src/tag.cpp.o" \
-"CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o" \
-"CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o"
+"CMakeFiles/yaml-cpp.dir/src/tag.cpp.o"
 
 # External object files for target yaml-cpp
 yaml__cpp_EXTERNAL_OBJECTS =
@@ -553,11 +523,9 @@ yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o
 yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o
 yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o
 yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
-yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o
-yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o
 yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/build.make
 yaml-build/libyaml-cpp.a: yaml-build/CMakeFiles/yaml-cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX static library libyaml-cpp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library libyaml-cpp.a"
 	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && $(CMAKE_COMMAND) -P CMakeFiles/yaml-cpp.dir/cmake_clean_target.cmake
 	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yaml-cpp.dir/link.txt --verbose=$(VERBOSE)
 

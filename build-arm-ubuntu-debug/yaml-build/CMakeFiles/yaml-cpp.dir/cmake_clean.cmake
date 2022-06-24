@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/yaml-cpp.dir/src/binary.cpp.o"
   "CMakeFiles/yaml-cpp.dir/src/binary.cpp.o.d"
-  "CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o"
-  "CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o.d"
-  "CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o"
-  "CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o.d"
   "CMakeFiles/yaml-cpp.dir/src/convert.cpp.o"
   "CMakeFiles/yaml-cpp.dir/src/convert.cpp.o.d"
   "CMakeFiles/yaml-cpp.dir/src/directives.cpp.o"

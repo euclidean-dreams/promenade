@@ -5,7 +5,7 @@
 		<Option title="rpi_ws281x"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\yaml-src\test\;CMake Files\build-arm-ubuntu-release\yaml-src\util\;CMake Files\build-arm-ubuntu-release\yaml-build\;CMake Files\build-arm-ubuntu-release\yaml-build\test\;CMake Files\build-arm-ubuntu-release\yaml-build\test\googletest_project-prefix\;CMake Files\build-arm-ubuntu-release\yaml-build\test\googletest_project-prefix\tmp\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build"/>
@@ -158,9 +158,6 @@
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/CMake/BuildFlatBuffers.cmake">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\"/>
 		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/CMake/FlatbuffersConfigVersion.cmake.in">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\"/>
-		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/flatbuffers-src/CMake/Version.cmake">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\"/>
 		</Unit>
@@ -172,18 +169,6 @@
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/yaml-cpp-config.cmake.in">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/yaml-cpp.pc.cmake">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\test\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/util/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-src\util\"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-build/test/googletest_project-prefix/tmp/googletest_project-cfgcmd.txt.in">
-			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\yaml-build\test\googletest_project-prefix\tmp\"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-serialization-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\impresario-serialization-src\"/>
