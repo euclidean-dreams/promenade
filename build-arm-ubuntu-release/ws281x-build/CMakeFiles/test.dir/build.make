@@ -92,7 +92,7 @@ test_EXTERNAL_OBJECTS =
 
 ws281x-build/test: ws281x-build/CMakeFiles/test.dir/main.c.o
 ws281x-build/test: ws281x-build/CMakeFiles/test.dir/build.make
-ws281x-build/test: ws281x-build/libws2811.a
+ws281x-build/test: ws281x-build/libws2811.so
 ws281x-build/test: ws281x-build/CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test"
 	cd /home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)

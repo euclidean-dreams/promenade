@@ -5,7 +5,7 @@
 		<Option title="impresario-serialization"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\pigpio-src\;CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-serialization-build"/>
@@ -160,6 +160,15 @@
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/cmake/utils.cmake">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/cmake/FindRT.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/cmake/setup.py.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\ws281x-src\"/>

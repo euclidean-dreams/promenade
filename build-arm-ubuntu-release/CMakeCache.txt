@@ -17,6 +17,9 @@
 //Build as shared library
 BUILD_SHARED:BOOL=OFF
 
+//Create shared libraries
+BUILD_SHARED_LIBS:BOOL=ON
+
 //Build test application
 BUILD_TEST:BOOL=ON
 
@@ -402,6 +405,12 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//Path to a file.
+RT_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+RT_LIBRARIES:FILEPATH=/usr/lib/arm-linux-gnueabihf/librt.a
+
 //Build all artifacts
 SPDLOG_BUILD_ALL:BOOL=OFF
 
@@ -516,6 +525,15 @@ impresario-utils_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 impresario-utils_SOURCE_DIR:STATIC=/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src
+
+//Value Computed by CMake
+pigpio_BINARY_DIR:STATIC=/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build
+
+//Value Computed by CMake
+pigpio_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+pigpio_SOURCE_DIR:STATIC=/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src
 
 //Value Computed by CMake
 promenade_BINARY_DIR:STATIC=/home/josiah/euclid/promenade/build-arm-ubuntu-release
@@ -696,7 +714,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -739,6 +757,14 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Compiler support for a deprecated attribute
+COMPILER_HAS_DEPRECATED:INTERNAL=1
+//Test COMPILER_HAS_DEPRECATED_ATTR
+COMPILER_HAS_DEPRECATED_ATTR:INTERNAL=1
+//Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+COMPILER_HAS_HIDDEN_INLINE_VISIBILITY:INTERNAL=1
+//Test COMPILER_HAS_HIDDEN_VISIBILITY
+COMPILER_HAS_HIDDEN_VISIBILITY:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_DEB
 CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_FREEBSD
@@ -775,6 +801,8 @@ CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 EXPORT_TARGETS:INTERNAL=yaml-cpp
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding rt
+FIND_PACKAGE_MESSAGE_DETAILS_rt:INTERNAL=[/usr/lib/arm-linux-gnueabihf/librt.a][/usr/include][v()]
 //Test FLAG_WEXTRA
 FLAG_WEXTRA:INTERNAL=1
 //Have symbol strtof_l
@@ -785,6 +813,15 @@ FLATBUFFERS_HAS_STRTOULL_L:INTERNAL=1
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: RT_INCLUDE_DIR
+RT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: RT_LIBRARIES
+RT_LIBRARIES-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=/usr/bin/python3.10
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;4;32;;cpython-310-arm-linux-gnueabihf;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=b91b4035ecb3bb3f5760d35922531bcd
 

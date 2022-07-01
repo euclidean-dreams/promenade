@@ -538,3 +538,56 @@ int main(void)
   return 0;
 }
 
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: /home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c3105/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c3105.dir/build.make CMakeFiles/cmTC_c3105.dir/build
+gmake[1]: Entering directory '/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3105.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fvisibility=hidden -o CMakeFiles/cmTC_c3105.dir/src.cxx.o -c /home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c3105
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3105.dir/link.txt --verbose=1
+/usr/bin/c++ -rdynamic CMakeFiles/cmTC_c3105.dir/src.cxx.o -o cmTC_c3105 
+gmake[1]: Leaving directory '/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY succeeded with the following output:
+Change Dir: /home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3a205/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3a205.dir/build.make CMakeFiles/cmTC_3a205.dir/build
+gmake[1]: Entering directory '/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3a205.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_3a205.dir/src.cxx.o -c /home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3a205
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a205.dir/link.txt --verbose=1
+/usr/bin/c++ -rdynamic CMakeFiles/cmTC_3a205.dir/src.cxx.o -o cmTC_3a205 
+gmake[1]: Leaving directory '/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
+Change Dir: /home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2bef6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2bef6.dir/build.make CMakeFiles/cmTC_2bef6.dir/build
+gmake[1]: Entering directory '/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2bef6.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_2bef6.dir/src.cxx.o -c /home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp/src.cxx
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+    2 |     int main() { return somefunc();}
+      |                         ~~~~~~~~^~
+/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+    1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+      |                                     ^~~~~~~~
+Linking CXX executable cmTC_2bef6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bef6.dir/link.txt --verbose=1
+/usr/bin/c++ -rdynamic CMakeFiles/cmTC_2bef6.dir/src.cxx.o -o cmTC_2bef6 
+gmake[1]: Leaving directory '/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}

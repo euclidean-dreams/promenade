@@ -13,8 +13,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/spdlog.dir/src/spdlog.cpp.o.d"
   "CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o"
   "CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o.d"
-  "libspdlog.a"
   "libspdlog.pdb"
+  "libspdlog.so"
+  "libspdlog.so.1"
+  "libspdlog.so.1.9.2"
 )
 
 # Per-language clean rules from dependency scanning.

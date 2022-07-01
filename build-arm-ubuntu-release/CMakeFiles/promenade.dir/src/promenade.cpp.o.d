@@ -352,7 +352,8 @@ CMakeFiles/promenade.dir/src/promenade.cpp.o: \
  /home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src/include/../src/percipient/../arbiter/Arbiter.h \
  /home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src/include/../src/percipient/../arbiter/BufferArbiter.h \
  /home/josiah/euclid/promenade/src/semiotics/blocks.h \
- /home/josiah/euclid/promenade/src/led_strip.h \
+ /home/josiah/euclid/promenade/src/leds.h \
+ /home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpio.h \
  /home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src/ws2811.h \
  /home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src/rpihw.h \
  /home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src/pwm.h

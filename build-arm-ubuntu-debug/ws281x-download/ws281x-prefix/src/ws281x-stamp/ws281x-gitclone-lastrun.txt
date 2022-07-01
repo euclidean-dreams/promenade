@@ -1,3 +1,0 @@
-repository='git@github.com:jgarff/rpi_ws281x.git'
-module=''
-tag='origin'

@@ -286,6 +286,123 @@ spdlog/fast:
 .PHONY : spdlog/fast
 
 #=============================================================================
+# Target rules for targets named pigpio
+
+# Build rule for target.
+pigpio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pigpio
+.PHONY : pigpio
+
+# fast build rule for target.
+pigpio/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/pigpio.dir/build.make pigpio-build/CMakeFiles/pigpio.dir/build
+.PHONY : pigpio/fast
+
+#=============================================================================
+# Target rules for targets named pigpiod_if
+
+# Build rule for target.
+pigpiod_if: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pigpiod_if
+.PHONY : pigpiod_if
+
+# fast build rule for target.
+pigpiod_if/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/pigpiod_if.dir/build.make pigpio-build/CMakeFiles/pigpiod_if.dir/build
+.PHONY : pigpiod_if/fast
+
+#=============================================================================
+# Target rules for targets named pigpiod_if2
+
+# Build rule for target.
+pigpiod_if2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pigpiod_if2
+.PHONY : pigpiod_if2
+
+# fast build rule for target.
+pigpiod_if2/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/pigpiod_if2.dir/build.make pigpio-build/CMakeFiles/pigpiod_if2.dir/build
+.PHONY : pigpiod_if2/fast
+
+#=============================================================================
+# Target rules for targets named x_pigpio
+
+# Build rule for target.
+x_pigpio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 x_pigpio
+.PHONY : x_pigpio
+
+# fast build rule for target.
+x_pigpio/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/x_pigpio.dir/build.make pigpio-build/CMakeFiles/x_pigpio.dir/build
+.PHONY : x_pigpio/fast
+
+#=============================================================================
+# Target rules for targets named x_pigpiod_if
+
+# Build rule for target.
+x_pigpiod_if: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 x_pigpiod_if
+.PHONY : x_pigpiod_if
+
+# fast build rule for target.
+x_pigpiod_if/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/x_pigpiod_if.dir/build.make pigpio-build/CMakeFiles/x_pigpiod_if.dir/build
+.PHONY : x_pigpiod_if/fast
+
+#=============================================================================
+# Target rules for targets named x_pigpiod_if2
+
+# Build rule for target.
+x_pigpiod_if2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 x_pigpiod_if2
+.PHONY : x_pigpiod_if2
+
+# fast build rule for target.
+x_pigpiod_if2/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/x_pigpiod_if2.dir/build.make pigpio-build/CMakeFiles/x_pigpiod_if2.dir/build
+.PHONY : x_pigpiod_if2/fast
+
+#=============================================================================
+# Target rules for targets named pigpiod
+
+# Build rule for target.
+pigpiod: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pigpiod
+.PHONY : pigpiod
+
+# fast build rule for target.
+pigpiod/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/pigpiod.dir/build.make pigpio-build/CMakeFiles/pigpiod.dir/build
+.PHONY : pigpiod/fast
+
+#=============================================================================
+# Target rules for targets named pigs
+
+# Build rule for target.
+pigs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pigs
+.PHONY : pigs
+
+# fast build rule for target.
+pigs/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/pigs.dir/build.make pigpio-build/CMakeFiles/pigs.dir/build
+.PHONY : pigs/fast
+
+#=============================================================================
+# Target rules for targets named pig2vcd
+
+# Build rule for target.
+pig2vcd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pig2vcd
+.PHONY : pig2vcd
+
+# fast build rule for target.
+pig2vcd/fast:
+	$(MAKE) $(MAKESILENT) -f pigpio-build/CMakeFiles/pig2vcd.dir/build.make pigpio-build/CMakeFiles/pig2vcd.dir/build
+.PHONY : pig2vcd/fast
+
+#=============================================================================
 # Target rules for targets named ws2811
 
 # Build rule for target.
@@ -378,10 +495,19 @@ help:
 	@echo "... releasable"
 	@echo "... flatbuffers"
 	@echo "... impresario-utils"
+	@echo "... pig2vcd"
+	@echo "... pigpio"
+	@echo "... pigpiod"
+	@echo "... pigpiod_if"
+	@echo "... pigpiod_if2"
+	@echo "... pigs"
 	@echo "... promenade"
 	@echo "... spdlog"
 	@echo "... test"
 	@echo "... ws2811"
+	@echo "... x_pigpio"
+	@echo "... x_pigpiod_if"
+	@echo "... x_pigpiod_if2"
 	@echo "... yaml-cpp"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

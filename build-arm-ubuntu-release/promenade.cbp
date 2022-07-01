@@ -5,7 +5,7 @@
 		<Option title="promenade"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\pigpio-src\;CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release"/>
@@ -24,9 +24,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/src"/>
 					<Add directory="/home/josiah/euclid/promenade/src/semiotics"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src/include"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
@@ -55,9 +58,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/src"/>
 					<Add directory="/home/josiah/euclid/promenade/src/semiotics"/>
+					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src/include"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
@@ -166,6 +172,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src/include"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
@@ -194,6 +202,8 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src/include"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/include"/>
@@ -346,12 +356,15 @@
 				</MakeCommands>
 			</Target>
 			<Target title="spdlog">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_EXPORT"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/include"/>
 					<Add directory="/usr/include/c++/11"/>
@@ -370,12 +383,15 @@
 				</MakeCommands>
 			</Target>
 			<Target title="spdlog/fast">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_EXPORT"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/include"/>
 					<Add directory="/usr/include/c++/11"/>
@@ -393,11 +409,407 @@
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="pigpio">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/libpigpio.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpio"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigpio/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/libpigpio.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigpiod_if">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/libpigpiod_if.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpiod_if"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigpiod_if/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/libpigpiod_if.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpiod_if/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigpiod_if2">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/libpigpiod_if2.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpiod_if2"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigpiod_if2/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/libpigpiod_if2.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpiod_if2/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x_pigpio">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/x_pigpio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 x_pigpio"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x_pigpio/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/x_pigpio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 x_pigpio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x_pigpiod_if">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/x_pigpiod_if" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 x_pigpiod_if"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x_pigpiod_if/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/x_pigpiod_if" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 x_pigpiod_if/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x_pigpiod_if2">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/x_pigpiod_if2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 x_pigpiod_if2"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x_pigpiod_if2/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/x_pigpiod_if2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 x_pigpiod_if2/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigpiod">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/pigpiod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpiod"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigpiod/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/pigpiod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigpiod/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigs">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/pigs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigs"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pigs/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/pigs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pigs/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pig2vcd">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/pig2vcd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pig2vcd"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pig2vcd/fast">
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/pig2vcd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/arm-linux-gnueabihf/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 pig2vcd/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ws2811">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build/libws2811.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build/libws2811.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build"/>
@@ -417,10 +829,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="ws2811/fast">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build/libws2811.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build/libws2811.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build"/>
@@ -611,6 +1023,62 @@
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-src/src/percipient/VolitiaPercipient.h">
 			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/command.c">
+			<Option target="pigpio"/>
+			<Option target="pigpiod_if"/>
+			<Option target="pigpiod_if2"/>
+			<Option target="pigs"/>
+			<Option target="pig2vcd"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/command.h">
+			<Option target="pigpio"/>
+			<Option target="pigpiod_if"/>
+			<Option target="pigpiod_if2"/>
+			<Option target="pigs"/>
+			<Option target="pig2vcd"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/custom.cext">
+			<Option target="pigpio"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pig2vcd.c">
+			<Option target="pig2vcd"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpio.c">
+			<Option target="pigpio"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpio.h">
+			<Option target="pigpio"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpiod.c">
+			<Option target="pigpiod"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpiod_if.c">
+			<Option target="pigpiod_if"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpiod_if.h">
+			<Option target="pigpiod_if"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpiod_if2.c">
+			<Option target="pigpiod_if2"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigpiod_if2.h">
+			<Option target="pigpiod_if2"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigs.c">
+			<Option target="pigs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/pigs.h">
+			<Option target="pigs"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/x_pigpio.c">
+			<Option target="x_pigpio"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/x_pigpiod_if.c">
+			<Option target="x_pigpiod_if"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/x_pigpiod_if2.c">
+			<Option target="x_pigpiod_if2"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/include/spdlog/async.h">
 			<Option target="spdlog"/>
@@ -1200,7 +1668,7 @@
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/yaml-src/src/token.h">
 			<Option target="yaml-cpp"/>
 		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/src/led_strip.h">
+		<Unit filename="/home/josiah/euclid/promenade/src/leds.h">
 			<Option target="promenade"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/src/main.cpp">
@@ -1219,9 +1687,6 @@
 			<Option target="promenade"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/src/semiotics/semiotics.h">
-			<Option target="promenade"/>
-		</Unit>
-		<Unit filename="/home/josiah/euclid/promenade/src/semiotics/squires.h">
 			<Option target="promenade"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/CMakeLists.txt">
@@ -1271,6 +1736,15 @@
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/cmake/utils.cmake">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/cmake/FindRT.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/cmake/setup.py.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\ws281x-src\"/>

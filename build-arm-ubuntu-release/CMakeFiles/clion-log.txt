@@ -60,6 +60,27 @@ HEAD is now at 8a1ec7f added eq to essentia
 -- Build type: Release
 -- Configuring done
 -- Generating done
+-- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-download
+[ 11%] Performing update step for 'pigpio'
+[ 22%] No patch step for 'pigpio'
+[ 33%] No configure step for 'pigpio'
+[ 44%] No build step for 'pigpio'
+[ 55%] No install step for 'pigpio'
+[ 66%] No test step for 'pigpio'
+[ 77%] Completed 'pigpio'
+[100%] Built target pigpio
+CMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (rt) does
+  not match the name of the calling package (RT).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  build-arm-ubuntu-release/pigpio-src/cmake/FindRT.cmake:28 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  build-arm-ubuntu-release/pigpio-src/CMakeLists.txt:8 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
 -- Build files have been written to: /home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-download
 [ 11%] Performing update step for 'ws281x'
 [ 22%] No patch step for 'ws281x'

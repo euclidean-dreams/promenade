@@ -108,10 +108,11 @@ promenade_EXTERNAL_OBJECTS =
 promenade: CMakeFiles/promenade.dir/src/main.cpp.o
 promenade: CMakeFiles/promenade.dir/src/promenade.cpp.o
 promenade: CMakeFiles/promenade.dir/build.make
+promenade: pigpio-build/libpigpio.so
+promenade: ws281x-build/libws2811.so
 promenade: impresario-utils-build/libimpresario-utils.a
-promenade: ws281x-build/libws2811.a
 promenade: yaml-build/libyaml-cpp.a
-promenade: spdlog-build/libspdlog.a
+promenade: spdlog-build/libspdlog.so.1.9.2
 promenade: flatbuffers-build/libflatbuffers.a
 promenade: CMakeFiles/promenade.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/josiah/euclid/promenade/build-arm-ubuntu-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable promenade"

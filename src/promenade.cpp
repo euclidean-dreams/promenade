@@ -5,7 +5,7 @@ using namespace PROJECT_NAMESPACE;
 Promenade::Promenade(
         zmq::context_t &zmqContext,
         sp<Arbiter<const Parcel>> volitiaArbiter
-): volitiaArbiter{mv(volitiaArbiter)} {
+) : volitiaArbiter{mv(volitiaArbiter)} {
     input = mkup<NetworkSocket>(
             zmqContext,
             Config::getInstance().getString("input_endpoint"),
@@ -13,6 +13,14 @@ Promenade::Promenade(
             false
     );
     input->setSubscriptionFilter(Identifier::glimpse);
+    if (Config::getInstance().getString("strip_name") == "ada") {
+        leds = mkup<Ada>();
+    } else if (Config::getInstance().getString("strip_name") == "waldo") {
+        leds = mkup<Waldo>();
+    } else {
+        LOGGER->error("invalid led strip name {}", Config::getInstance().getString("strip_name"));
+    }
+
 }
 
 uint64_t Promenade::getTickInterval() {
@@ -36,11 +44,10 @@ void Promenade::activate() {
         for (int index = 0; index < promenade_size; index++) {
             auto rawColor = (*colors)[index];
             auto color = rgb{rawColor->red(), rawColor->green(), rawColor->blue()};
-            leds.set_led(index, color);
+            leds->set_led(index, color);
         }
     }
-    leds.setBrightness(brightness);
-    leds.render();
+    leds->render();
 }
 
 vec<up<Parcel>> Promenade::receive_parcel_bundle() {

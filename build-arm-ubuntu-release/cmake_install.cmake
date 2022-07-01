@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/josiah/euclid/promenade/build-arm-ubuntu-release/impresario-utils-build/cmake_install.cmake")
+  include("/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-build/cmake_install.cmake")
   include("/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build/cmake_install.cmake")
 
 endif()

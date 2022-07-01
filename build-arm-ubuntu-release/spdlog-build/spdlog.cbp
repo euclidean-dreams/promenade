@@ -5,7 +5,7 @@
 		<Option title="spdlog"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build-arm-ubuntu-release\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\;CMake Files\build-arm-ubuntu-release\flatbuffers-src\CMake\;CMake Files\build-arm-ubuntu-release\yaml-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-serialization-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\;CMake Files\build-arm-ubuntu-release\impresario-utils-src\lib\cmake-utils\;CMake Files\build-arm-ubuntu-release\spdlog-src\;CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\;CMake Files\build-arm-ubuntu-release\pigpio-src\;CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\;CMake Files\build-arm-ubuntu-release\ws281x-src\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build"/>
@@ -18,12 +18,15 @@
 				</MakeCommands>
 			</Target>
 			<Target title="spdlog">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_EXPORT"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/include"/>
 					<Add directory="/usr/include/c++/11"/>
@@ -42,12 +45,15 @@
 				</MakeCommands>
 			</Target>
 			<Target title="spdlog/fast">
-				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build/libspdlog.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-build"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSPDLOG_SHARED_LIB"/>
+					<Add option="-DFMT_EXPORT"/>
+					<Add option="-DFMT_SHARED"/>
 					<Add option="-DSPDLOG_COMPILED_LIB"/>
 					<Add directory="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/include"/>
 					<Add directory="/usr/include/c++/11"/>
@@ -407,6 +413,15 @@
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/spdlog-src/cmake/utils.cmake">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\spdlog-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/cmake/FindRT.cmake">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/pigpio-src/cmake/setup.py.in">
+			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\pigpio-src\cmake\"/>
 		</Unit>
 		<Unit filename="/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\build-arm-ubuntu-release\ws281x-src\"/>

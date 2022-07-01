@@ -1,1 +1,1 @@
-/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/test.dir/main.c.o -o test  libws2811.a -lm 
+/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/test.dir/main.c.o -o test  -Wl,-rpath,/home/josiah/euclid/promenade/build-arm-ubuntu-release/ws281x-build libws2811.so -lm 

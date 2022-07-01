@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ws2811.dir/rpihw.c.o.d"
   "CMakeFiles/ws2811.dir/ws2811.c.o"
   "CMakeFiles/ws2811.dir/ws2811.c.o.d"
-  "libws2811.a"
   "libws2811.pdb"
+  "libws2811.so"
 )
 
 # Per-language clean rules from dependency scanning.
