@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libws2811.so -o libws2811.so CMakeFiles/ws2811.dir/mailbox.c.o CMakeFiles/ws2811.dir/ws2811.c.o CMakeFiles/ws2811.dir/pwm.c.o CMakeFiles/ws2811.dir/pcm.c.o CMakeFiles/ws2811.dir/dma.c.o CMakeFiles/ws2811.dir/rpihw.c.o  -lm 

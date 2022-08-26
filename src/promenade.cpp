@@ -21,6 +21,14 @@ Promenade::Promenade(
         LOGGER->error("invalid led strip name {}", Config::getInstance().getString("strip_name"));
     }
 
+    // diagnostic led
+    leds->set_led(0, {0, 10, 40});
+    leds->set_led(1, {0, 20, 40});
+    leds->set_led(2, {0, 30, 40});
+    leds->set_led(3, {0, 40, 40});
+    leds->render();
+    LOGGER->info("set ldiagnostic leds!");
+
 }
 
 uint64_t Promenade::getTickInterval() {

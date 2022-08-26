@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PublishConfigData" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;build-*;" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="ambrose (4ff81e28-a929-41c1-9944-5102b2e90a08)">
+      <paths name="ambrose (6cea954e-3fe1-43e5-9be3-7f3908dfcb22)">
         <serverdata>
           <mappings>
             <mapping deploy="/home/josiah/euclid/promenade" local="$PROJECT_DIR$" />
@@ -10,7 +10,7 @@
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-release" />
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/build-x86-ubuntu-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
           </excludedPaths>
         </serverdata>
       </paths>

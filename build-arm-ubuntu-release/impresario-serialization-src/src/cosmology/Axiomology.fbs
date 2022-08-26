@@ -1,7 +1,0 @@
-namespace ImpresarioSerialization;
-
-table Axiomology {
-    axioms:[float32];
-}
-
-root_type Axiomology;

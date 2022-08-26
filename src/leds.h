@@ -115,7 +115,7 @@ public:
         // leds
         for (auto &led: leds) {
             // brightness
-            frame.push_back(0xE0 + brightness);
+            frame.push_back(0xFF);
 
             // color
             frame.push_back(led.r);

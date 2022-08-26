@@ -8,7 +8,7 @@ max_brightness: 255
 
 # ada for apa102's
 # waldo for ws2812's
-strip_name: ada
+strip_name: waldo
 
 ####
 # ada options
