@@ -27,7 +27,7 @@ Promenade::Promenade(
     leds->set_led(2, {0, 30, 40});
     leds->set_led(3, {0, 40, 40});
     leds->render();
-    LOGGER->info("set ldiagnostic leds!");
+    LOGGER->info("set diagnostic leds!");
 
 }
 
