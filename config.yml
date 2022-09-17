@@ -1,7 +1,9 @@
 input_endpoint: ipc:///tmp/percipia
 volitia_endpoint: tcp://volitia:44440
 
-promenade_size: 87
+# lens 87
+# keyhole 296
+promenade_size: 296
 
 initial_brightness: 10
 max_brightness: 255
