@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;build-*;" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="ambrose (6cea954e-3fe1-43e5-9be3-7f3908dfcb22)" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;build-*;" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="ambrose (6cea954e-3fe1-43e5-9be3-7f3908dfcb22)">
         <serverdata>
@@ -10,6 +10,32 @@
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-release" />
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="calcifer (32b2544a-b437-4695-bdc7-f3345d9df26e)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/josiah/euclid/promenade" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="easty (8513335c-3520-4faa-a8e9-02fa37def717)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/josiah/euclid/promenade" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
           </excludedPaths>
         </serverdata>
