@@ -1,43 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ambrose (6cea954e-3fe1-43e5-9be3-7f3908dfcb22)" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;build-*;" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;build-*;" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="ambrose (6cea954e-3fe1-43e5-9be3-7f3908dfcb22)">
+      <paths name="ambrose (74b3377c-f7d5-4b6e-a1df-af20cb34b1eb)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/josiah/euclid/promenade" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/josiah/euclidean-dreams/promenade" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-ambrose-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-bismuth-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-release" />
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-foster-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-bismuth-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-ambrose-debug" />
           </excludedPaths>
         </serverdata>
       </paths>
-      <paths name="calcifer (32b2544a-b437-4695-bdc7-f3345d9df26e)">
+      <paths name="bismuth (ca894296-ee0e-4e47-82cf-fbe13c01f40a)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/josiah/euclid/promenade" local="$PROJECT_DIR$" />
+            <mapping deploy="/tmp/promenade" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="foster (b807a54d-b6db-4b62-8c5e-4fa5d1ab6b22)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/josiah/euclidean-dreams/promenade" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-foster-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-bismuth-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-release" />
             <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-foster-release" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build-bismuth-release" />
           </excludedPaths>
         </serverdata>
       </paths>
-      <paths name="easty (8513335c-3520-4faa-a8e9-02fa37def717)">
+      <paths name="squigs (6c885b69-c18f-4f5a-9c34-c2b037b3c78c)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/josiah/euclid/promenade" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/josiah/euclidean-dreams/promenade" local="$PROJECT_DIR$" web="/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-release" />
-            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-ubuntu-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/build-arm-rpi-release" />
-          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

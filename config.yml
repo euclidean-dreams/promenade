@@ -9,8 +9,9 @@ initial_brightness: 10
 max_brightness: 255
 
 # ada for apa102's
+# skipper for sk9822's
 # waldo for ws2812's
-strip_name: waldo
+strip_name: skipper
 
 ####
 # ada options

@@ -14,9 +14,11 @@ Promenade::Promenade(
     );
     input->setSubscriptionFilter(Identifier::glimpse);
     if (Config::getInstance().getString("strip_name") == "ada") {
-        leds = mkup<Ada>();
+        leds = mkup<Ada>(false);
     } else if (Config::getInstance().getString("strip_name") == "waldo") {
         leds = mkup<Waldo>();
+    } else if (Config::getInstance().getString("strip_name") == "skipper") {
+        leds = mkup<Ada>(true);
     } else {
         LOGGER->error("invalid led strip name {}", Config::getInstance().getString("strip_name"));
     }

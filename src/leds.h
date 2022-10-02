@@ -82,6 +82,7 @@ class Ada : public LedStrip {
 private:
     vec<rgb> leds;
     int spi_handle;
+    bool skipper;
 
     static void initialize_pigpio() {
         auto result = gpioInitialise();
@@ -93,7 +94,8 @@ private:
     }
 
 public:
-    Ada() {
+    Ada(bool skipper) {
+        this->skipper = skipper;
         // this needs to move if more than one Ada is initialized simultaneously
         initialize_pigpio();
         leds.resize(promenade_size, {0, 0, 0});
@@ -118,9 +120,15 @@ public:
             frame.push_back(0xFF);
 
             // color
-            frame.push_back(led.r);
-            frame.push_back(led.g);
-            frame.push_back(led.b);
+            if(skipper) {
+                frame.push_back(led.b);
+                frame.push_back(led.g);
+                frame.push_back(led.r);
+            } else {
+                frame.push_back(led.r);
+                frame.push_back(led.g);
+                frame.push_back(led.b);
+            }
         }
 
         // end frame
